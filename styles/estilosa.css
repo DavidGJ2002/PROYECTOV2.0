@@ -6,7 +6,7 @@ body {
 
 form {
 
-  margin: 10em auto;
+  margin: 10em 5em auto auto;
   width: 25em;
   padding: 1em;
   border: 1px solid #CCC;
@@ -31,8 +31,7 @@ label {
   text-align: right;
 }
 
-input,
-textarea {
+input {
   /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
      Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
   font: 1em sans-serif;
@@ -43,30 +42,26 @@ textarea {
 
   /* Hacer coincidir los bordes del campo del formulario */
   border: 1px solid #999;
+  transition: background-color .5s;
 }
 
-input:focus,
-textarea:focus {
+input:focus{
   /* Destacado adicional para elementos que tienen el cursor */
   border-color: #000;
-}
-
-textarea {
-  /* Alinear los campos de texto multilínea con sus etiquetas */
-  vertical-align: top;
-
-  /* Proporcionar espacio para escribir texto */
-  height: 5em;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 .button {
   /* Alinear los botones con los campos de texto */
 
   margin: 2em 9em 0.5em 8em;
+
 }
 
 button {
   /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
      entre las etiquetas y sus campos de texto */
+     align-content: center;
   margin-left: .5em;
 }

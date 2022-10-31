@@ -1,0 +1,138 @@
+html {
+  font-family: 'Cormorant Garamond', serif;
+  background: orange;
+}
+
+header {
+  background-image: url(../images/marcas.png);
+  font-family: 'Luckiest Guy', serif;
+  font-size: 20px;
+  color: blue;
+}
+
+#navegap {
+  background: #a4bddf;
+  font-family: 'Combo', serif;
+  font-size: 20px;
+}
+
+aside {
+  font-family: 'Combo', serif;
+  font-size: 20px;
+  height: auto;
+  width: auto;
+  border-style: solid;
+  border-width: 1px;
+}
+.contenido {
+  display: inline-block;
+}
+
+#colab {
+  background-color: #ff8000;
+  border: 2px solid black;
+}
+
+.bloque {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.colaboracion {
+  background-color: yellow;
+  border: 1px solid orange;
+}
+
+.colaboraciones {
+  background-color: pink;
+  border: 2px solid white;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.products {
+  margin: .5rem;
+  padding: .3rem;
+  display: inline-block;
+  font-family: 'Gloria Hallelujah', serif;
+  height: auto;
+  width: auto;
+  background: white;
+  border: 2px solid black;
+}
+
+#pr1, #pr2, #pr3, #pr4, #pr5, #pr6, #pel1, #pel2, #pel3, #pr7 {
+  border-style: inset;
+}
+
+#buy1, #buy2, #buy3, #buy4, #buy5, #buy6, #rep1, #rep2, #rep3, #buy7 {
+  border-style: solid;
+  height: auto;
+  width: auto;
+}
+
+.marcas {
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+}
+
+
+.marks {
+    margin: .5rem;
+    padding: .3rem;
+    display: inline-block;
+    font-family: 'Gloria Hallelujah', serif;
+    height: auto;
+    width: 430px;
+    border: dotted black;
+}
+
+.marks1 {
+    margin: .5rem;
+    padding: .3rem;
+    height: auto;
+    width: 400px;
+}
+
+#m1 {
+    background: right/contain content-box border-box no-repeat
+        url("../images/lego.png") white;
+}
+
+#m2 {
+    background: right/contain content-box border-box no-repeat
+        url("../images/funkop.jpg") white;
+}
+
+#m3 {
+    background: right/contain content-box border-box no-repeat
+        url("../images/mattel.png") white;
+}
+
+#m4 {
+    background: right/contain content-box border-box no-repeat
+        url("../images/warner.png") white;
+}
+
+#m5 {
+    background: right/contain content-box border-box no-repeat
+        url("../images/ea.png") white;
+}
+
+#m6 {
+    background: right/contain content-box border-box no-repeat
+        url("../images/vans.png") white;
+}
+
+footer {
+  font-size: 20px;
+  height: auto;
+  width: auto;
+  border: 2px dotted;
+}

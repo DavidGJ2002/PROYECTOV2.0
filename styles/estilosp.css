@@ -1,0 +1,132 @@
+header {
+  background-image: url(../images/hp.jpg);
+  background-size: cover;
+  font-family: 'Combo', serif;
+  font-size: 30px;
+}
+body {
+  background: #34495e;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#he1{
+  color: yellow;
+  text-align: center;
+}
+
+#he2{
+  color: white;
+}
+.h2{
+  color: white;
+  font-family: 'Rozha One', serif;
+  font-size: 2.6rem;
+  text-align: center;
+}
+.h3{
+  color: white;
+  font-family: 'Vast Shadow', cursive;
+  font-size: 1.6rem;
+  text-align: center;
+}
+p{
+  color: white;
+  font-family: 'IBM Plex Serif', serif;
+  text-align: center;
+}
+#p1{
+  justify-content: center;
+}
+
+#navegap {
+  background: #a4bddf;
+  font-family: 'Combo', serif;
+  font-size: 20px;
+}
+
+#navegap ul li{
+  list-style: none;
+  display: inline;
+}
+
+#navegap a{
+  padding: 0.25em;
+  text-decoration: none;
+}
+
+#navegap a:link{
+  font-weight: bold;
+  color: rgb(1,179,215);
+}
+
+#navegap a:visited{
+  color: rgb(187, 120, 255);
+}
+
+#navegap a:hover{
+  background-color: rgb(255, 255, 204);
+}
+
+#pr1, #pr2, #pr3, #pr4, #pr5, #pr6, #pr7, #pr8, #pr9, #pr10, #pr11 {
+  border-style: inset;
+}
+aside {
+  background: #1b333f;
+  font-family: 'Combo', serif;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+}
+a {
+  color: white;
+}
+img.izquierda {
+float: left;
+width: 300px;
+height: 300px;
+margin-right: 20px;
+}
+img.derecha{
+float: right;
+width: 300px;
+height: 300px;
+margin-right: 20px;
+}
+img.center {
+  display:block;
+  margin:auto;
+  width: 300px;
+  height: 300px;
+}
+img.gencenter {
+  display:block;
+  margin:auto;
+}
+
+.products {
+  margin: .5rem;
+  padding: .3rem;
+  display: inline-block;
+  font-family: 'Gloria Hallelujah', serif;
+  height: auto;
+  width: auto;
+  background: white;
+  border: 2px solid black;
+}
+
+.size{
+  width: 300px;
+  height: 385px;
+}
+
+.parks{
+  display:block;
+  margin:auto;
+  width: 400px;
+  height: 485px;
+}
+.section{
+  display: flex;
+  align-items: center;
+}

@@ -1,11 +1,17 @@
+body {
+  background-image: url(../images/hgw.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 form {
-  /* Centrar el formulario en la página */
-  margin: 0 auto;
-  width: 400px;
-  /* Esquema del formulario */
+
+  margin: 10em auto;
+  width: 25em;
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 ul {
@@ -21,7 +27,7 @@ form li + li {
 label {
   /* Tamaño y alineación uniforme */
   display: inline-block;
-  width: 90px;
+  width: 6rem;
   text-align: right;
 }
 
@@ -55,7 +61,8 @@ textarea {
 
 .button {
   /* Alinear los botones con los campos de texto */
-  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+
+  margin: 2em 9em 0.5em 8em;
 }
 
 button {

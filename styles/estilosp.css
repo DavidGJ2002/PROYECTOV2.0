@@ -1,11 +1,28 @@
 header {
   background-image: url(../images/hp.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Combo', serif;
-  font-size: 30px;
+  font-size: 2em;
+  animation: 10s cambio infinite;
 }
+
+/*esta parte del código define el movimiento de las imágenes a la izquierda*/
+@keyframes cambio {
+  from{
+    background-image: url(../images/hp.jpg);
+  }
+  50%{
+    background-image: url(../images/colegio.jpg);
+  }
+  to{
+    background-image: url(../images/kids.jpg);
+  }
+}
+
 body {
   background: #34495e;
+  background-size: cover;
   margin: 0;
   padding: 0;
   border: 0;
@@ -17,6 +34,7 @@ body {
 
 #he2{
   color: white;
+  margin-top: 3em;
 }
 .h2{
   color: white;
@@ -74,7 +92,7 @@ p{
 aside {
   background: #1b333f;
   font-family: 'Combo', serif;
-  font-size: 20px;
+  font-size: 1.25em;
   width: auto;
   height: auto;
 }
@@ -83,21 +101,21 @@ a {
 }
 img.izquierda {
 float: left;
-width: 300px;
-height: 300px;
-margin-right: 20px;
+width: 18.75em;
+height: 18.75em;
+margin-right: 1.25rem;
 }
 img.derecha{
 float: right;
-width: 300px;
-height: 300px;
-margin-right: 20px;
+width: 18.75em;
+height: 18.75em;
+margin-right: 1.25rem;
 }
 img.center {
   display:block;
   margin:auto;
-  width: 300px;
-  height: 300px;
+  width: 18.75em;
+  height: 18.75em;
 }
 img.gencenter {
   display:block;

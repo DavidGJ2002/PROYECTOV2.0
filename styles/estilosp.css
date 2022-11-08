@@ -1,3 +1,7 @@
+body{
+  height: 100%;
+  width: 100%;
+}
 header {
   background-image: url(../images/hp.jpg);
   background-size: cover;
@@ -5,6 +9,7 @@ header {
   font-family: 'Combo', serif;
   font-size: 2em;
   animation: 10s cambio infinite;
+  width: 100%;
 }
 
 /*esta parte del código define el movimiento de las imágenes a la izquierda*/
@@ -20,44 +25,72 @@ header {
   }
 }
 
+.anuncio{
+    background: linear-gradient(135deg, #15384A 30%, #98021D 60%, #221E2F);
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    padding: 2em 2.125em;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 0.5rem;
+    display: none;
+}
+.anuncio button{
+    display: block;
+    background-color: transparent;
+    font-size: 2rem;
+    color: gray;
+    margin:  0 0 1.25em auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.anuncio p{
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 1.25em 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 .contenedor {
-  color: #000000;
+  color: white;
   text-align: center;
+  margin-top: 4%;
 }
-.cartel {
-  width: 109px;
-  height: 109px;
-  padding: 10px 0px 5px 0px;
+.rel {
+  width: 8em;
+  height: 8em;
+  padding: .5em 0px .25em 0px;
   text-align: center;
   display: inline-block;
-  margin: 5px;
-  border: 3px solid #000000;
+  margin: .5em;
+  border: 3px solid white;
   border-radius: 5px;
 }
-.cartel>div{
-  font-size: 50px;
+.rel>div{
+  font-size: 3.125em;
   font-family: 'Chela One', sans serif;
-  color: white;
   animation: fade 3s;
-  line-height: 30px;
   margin-top: 5px;
 }
-.cartel>div>h3 {
+.rel>div>h3 {
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: normal;
 }
 .h3 {
   bottom: 0;
   margin: 0 auto ;
-}
-.contenedor {
-  margin-top: 3%;
 }
 .contenido {
   width: 80%;
@@ -65,39 +98,39 @@ header {
   border: 0px solid black;
   z-index: 10;
 }
+
 .numeros {
-  font-family: 'Chela one', sans-serif;
-  font-size: 60px;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 4em;
   transition: .3s;
   animation-name: fade;
   animation-duration: 3s;
 }
-.responsivo1 {
-  display: inline-block
+.rel{
+  display: inline-block;
 }
-.responsivo2 {
-  display: inline-block
-}
+
 @media (max-width: 450px) {
+  .popup{
+    height: 70%;
+  }
   .contenedor {
-    margin-top: 15%;
+    margin-top: 20%;
   }
-  .banner {
-   margin-bottom: 30px;
+
+  .rel {
+    height: 6em;
+    width: 6em;
   }
-  .cartel {
-    height: 99px;
-    width: 99px;
-  }
-  .cartel>div{
+  .rel>div{
     font-size: 45px;
   }
-  .cartel>div>h3 {
+  .rel>div>h3 {
     font-size: 15px;
     margin-top: 0px;
   }
 }
-@keyframes fade {
+@keyframes trannum {
     0%   {
       opacity: 0;
   }
@@ -149,7 +182,7 @@ p{
 #navegap {
   background: #a4bddf;
   font-family: 'Combo', serif;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 #navegap ul li{

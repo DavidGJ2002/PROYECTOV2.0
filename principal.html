@@ -22,39 +22,45 @@
   <!-- Llamada a CSS  -->
   <link rel="stylesheet" href="styles/estilosp.css">
   <script src="scripts/cuenta.js" defer></script>
+  <script src="scripts/ventanapop.js" defer></script>
 
 </head>
 
 <body>
+  <div class="anuncio">
+    <button id="cerrar">&times;</button>
+    <section>
+      <h3>¿Quieres ser parte de Hogwarts?</h3>
+      <img src="images/welcome.jpg" alt="">
+    </section>
+    <p>Tan solo faltan:</p>
+    <div class="contenedor">
+      <div class="contenido">
+        <div class="reloj">
+            <div class="rel">
+              <div id="dias"></div>
+              <div class="h3"><h3>Días</h3></div>
+            </div>
+            <div class="rel">
+              <div id="horas"></div>
+              <div class="h3"><h3>Horas</h3></div>
+            </div>
+            <div class="rel">
+              <div id="minutos"></div>
+              <div class="h3"><h3>Minutos</h3></div>
+            </div>
+            <div class="rel">
+              <div id="segundos"></div>
+              <div class="h3"><h3>Segundos</h3></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <p>Si quieres ser parte de Hogwarts solo espera tu carta que llegará con una lechuza</p>
+  </div>
   <header>
     <h1 id="he1">The magic muggle's world</h1>
     <h2 id="he2">Harry Potter</h2>
-    <div class="contenedor">
-  <div class="contenido">
-    <div class="contador">
-      <div class="responsivo1">
-        <div class="cartel">
-        <div id="dias"></div>
-        <div class="h3"><h3>Días</h3></div>
-      </div>
-        <div class="cartel">
-        <div id="horas"></div>
-        <div class="h3"><h3>Horas</h3></div>
-      </div>
-      </div>
-      <div class="responsivo2">
-      <div class="cartel">
-        <div id="minutos"></div>
-        <div class="h3"><h3>Minutos</h3></div>
-      </div>
-      <div class="cartel">
-        <div id="segundos"></div>
-        <div class="h3"><h3>Segundos</h3></div>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
   </header>
 
   <!-- Navegador para ir a paginas distintas -->

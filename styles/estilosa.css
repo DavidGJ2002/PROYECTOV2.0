@@ -3,10 +3,15 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-
+#descrip{
+  background-image: url("img_tree.gif"), url("paper.gif");
+  background-color: #cccccc;
+}
+.content{
+  display: 
+}
 form {
-
-  margin: 10em 5em auto auto;
+  margin: 10em 5em auto 10em;
   width: 25em;
   padding: 1em;
   border: 1px solid #CCC;

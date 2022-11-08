@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Contactanos</title>
+  <link rel="stylesheet" href="styles/estilocon.css">
+</head>
+<body>
+
+    <div id="formulario">
+      <h1>Formulario de contacto</h1>
+      <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+      <form action="submeter-formulario.php" method="post">
+
+        <p>
+          <label for="nombre" class="colocanombre">Nombre
+            <span class="obligatorio">*</span>
+          </label>
+          <input type="text" name="introducenombre" id="nombre" required placeholder="Escribe tu nombre">
+        </p>
+
+        <p>
+          <label for="email" class="colocaemail">Email
+            <span class="obligatorio">*</span>
+          </label>
+          <input type="email" name="introducemail" id="email" required placeholder="Escribe tu Email">
+        </p>
+
+        <p>
+          <label for="telefono" class="colocartelefono">Teléfono
+          </label>
+          <input type="tel" name="introducetelefono" id="telefono" placeholder="Escribe tu teléfono">
+        </p>
+
+        <p>
+          <label for="mensaje" class="colocar_mensaje">Dinos que te interesaría saber
+            <span class="obligatorio">*</span>
+          </label>
+          <textarea name="introducemensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+        </p>
+
+        <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+
+        <p class="aviso">
+          <span class="obligatorio"> * </span> los campos son obligatorios.
+        </p>
+
+      </form>
+    </div>
+</body>
+</html>

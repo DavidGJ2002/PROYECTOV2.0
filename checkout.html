@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>checkout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Bentham&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">The magic muggle's world</a>
+
+      <nav class="navbar">
+         <a href="home.html">home</a>
+         <a href="about.html">about</a>
+         <a href="menu.html">menu</a>
+         <a href="orders.html">orders</a>
+         <a href="contact.html">contact</a>
+      </nav>
+
+      <div class="icons">
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+   </section>
+
+</header>
+
+<div class="headingcheck">
+   <h3>c h e c k o u t</h3>
+   <p><a href="home.html">home </a> <span> / checkout</span></p>
+</div>
+
+<section class="checkout">
+
+   <h1 class="title"> Resumen de compra </h1>
+
+   <form action="" method="post">
+      <div class="cart-items" id=cont>
+         <h3>cart items</h3>
+         <p><span class="name">Funko HP 06 Lord Voldemort</span><span class="price">$864.32</span></p>
+         <p><span class="name">Wizarding World Juguete Sombrero seleccionador</span><span class="price">$985.00</span></p>
+         <p class="grand-total"><span class="name">Total de compra :</span> <span class="price">$1,849.32</span></p>
+         <a href="cart.html" class="btn">Ir al carrito</a>
+      </div>
+      <div class="user-info">
+
+         <select name="method" class="box" required>
+            <option value="" disabled selected>Seleccionar método de pago</option>
+            <option value="credit card">Tarjeta de credito/debito</option>
+            <option value="paypal">Paypal</option>
+            <option value="paytm">Deposito</option>
+         </select>
+      </div>
+      <input type="submit" value="Finalizar" name="order" class="btn order-btn">
+   </form>
+
+</section>
+
+<footer class="footer">
+
+
+   <div class="credit">&copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!</div>
+
+</footer>
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

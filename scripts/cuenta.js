@@ -1,15 +1,14 @@
-const second = 1000,
-minute = second * 60,
-hour = minute * 60,
-day = hour * 24;
+const segundo = 1000,
+minuto = segundo * 60,
+hora = minuto * 60,
+dia = hora * 24;
 
-let countDown = new Date('December 24, 2022 00:00:00').getTime(),
-x = setInterval(function() {
-
-  let now = new Date().getTime(),
-  distance = countDown - now;
-
-  document.getElementById('dias').innerText = Math.floor(distance / (day)),
-  document.getElementById('horas').innerText = Math.floor((distance % (day)) / (hour)),
-  document.getElementById('minutos').innerText = Math.floor((distance % (hour)) / (minute)),
-  document.getElementById('segundos').innerText = Math.floor((distance % (minute)) / second);}, second)
+let diaObjetivo = new Date('September 01, 2023 00:00:00').getTime(),
+reloj= setInterval(function() {
+  let fechaA = new Date().getTime(), distancia = diaObjetivo - fechaA;
+  let days = Math.floor(distancia / (dia)), hours= Math.floor((distancia % (dia)) / (hora)),
+             minutes = Math.floor((distancia % (hora)) / (minuto)), seconds = Math.floor((distancia % (minuto)) / segundo);
+  document.getElementById('dias').innerText = days,
+  document.getElementById('horas').innerText = hours,
+  document.getElementById('minutos').innerText = minutes,
+  document.getElementById('segundos').innerText = seconds;}, segundo)

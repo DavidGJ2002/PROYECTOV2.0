@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CarritoS</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="principal" class="logo">The magic muggle's world </a>
+
+      <nav class="navbar">
+        <a href="principal.html">principal</a>
+        <a href="productos.html">productos</a>
+        <a href="carrito.html">carrito</a>
+        <a href="checkout.html">checkout</a>
+        <a href="acceder.html">Iniciar Sesión</a>
+        <a href="contacta.html">Contactanos</a>
+      </nav>
+
+      <div class="icons">
+
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+   </section>
+
+</header>
+
+<div class="encabezadocheck">
+   <h3>shopping cart</h3>
+   <p><a href="home.html">home </a> <span> / cart</span></p>
+</div>
+
+<section class="productos">
+
+   <h1 class="titulo">Tu carrito</h1>
+
+   <div class="carrito-total">
+      <p>Total : <span>$1,849.32 </span></p>
+      <a href="checkout.html" class="btn">Haz tu ckeckout</a>
+      </div>
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="quick_view.html" class="fas vista-rap"></a>
+         <button class="fas vista-rap" type="submit" name="eliminar" onclick="return confirm('¿Eliminar producto?')"></button>
+         <img src="images/f3.jpg" alt="">
+         <div class="nombre">Funko HP 06 Lord Voldemort</div>
+         <div class="flex">
+            <div class="precio"><span>$</span> 864.32</div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            <button type="submit" class="fas editar"></button>
+         </div>
+         <div class="sub-total">Sub total : <span>$864.32</span></div>
+      </div>
+
+      <div class="box">
+         <a href="quick_view.html" class="vista-rap"></a>
+         <button class="fas vista-rap" type="submit" name="eliminar" onclick="return confirm('¿Eliminar producto?')"></button>
+         <img src="images/j1.jpg" alt="">
+         <div class="nombre">Wizarding World Juguete Sombrero seleccionador</div>
+         <div class="flex">
+            <div class="precio"><span>$</span> 985.00</div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            <button type="submit" class="fas editar"></button>
+         </div>
+         <div class="sub-total">Sub total : <span>$985.00</span></div>
+      </div>
+
+   </div>
+
+   <div class="more-btn">
+      <a href="#" class="eliminar-btn" onclick="return confirm('Desea eliminar todo el contenido del carrito');">Eliminar todo</a>
+   </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+      <a href="principal.html">principal</a>
+      <a href="productos.html">productos</a>
+      <a href="carrito.html">carrito</a>
+      <a href="checkout.html">checkout</a>
+    </div>
+
+    <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
+
+</section>
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

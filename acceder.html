@@ -6,30 +6,45 @@
     <meta name="author" content="David Grande Valeria Pimentel">
     <meta name="description" content="Página principal">
     <title>Muggle´s Acceso</title>
-    <link rel="stylesheet" href="styles/estilosa.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <link rel="stylesheet" href="css/estilocon.css">
+    <script src="js/inises.js" defer></script>
   </head>
   <body>
-    <div id="descrip" class="content">
 
-    </div>
-    <form action="/my-handling-form-page" method="post" class="content">
-			<ul>
-				<li>
-					<label for="mail">E-mail: <br>
-            <input type="email" id="mail" name="user_mail" placeholder="Escribe tu correo electrónico">
-          </label>
+      <header>
+        <h1 id="he1">The magic muggle's world</h1>
+        <nav id="navegap">
+          <ul>
+            <li><a href="principal.html">Inicio</a></li>
+            <li><a href="contacta.html">Contactanos</a></li>
+          </ul>
+        </nav>
+      </header>
 
-				</li>
-        <li>
-          <label for="contra">Contraseña: <br>
-            <input type="password" id="contra" name="user_password" placeholder="Contraseña">
-          </label>
-        </li>
-				<li class="button">
-					<button type="submit">Iniciar sesión</button>
-				</li>
-			</ul>
-		</form>
 
+        <section id="formulario">
+          <h1>INICIAR SESIÓN</h1>
+
+
+          <form method="post" name="formlogin" onsubmit="validateForm()">
+
+            <p>
+              <label for="mail">
+                <input type="email" name="usermail" placeholder="Escribe tu correo electrónico">
+              </label>
+            </p>
+
+            <p>
+              <label for="contra">
+                <input type="password" name="userpassword" placeholder="Contraseña">
+              </label>
+            </p>
+
+            <button name="btn-enviar" type="submit">Iniciar sesión</button>
+
+          </form>
   </body>
 </html>
